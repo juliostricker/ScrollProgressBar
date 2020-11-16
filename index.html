@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scroll Progress Bar</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+</head>
+
+<body>
+    <div id="scrollPath"></div>
+    <div id="progressbar"></div>
+    <section>
+        <h2>Creative Scroll Progress Bar</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea, exercitationem. Ad, quaerat, est dignissimos
+            inventore maxime libero quasi molestiae quidem placeat iusto asperiores, consequatur voluptates porro
+            corrupti qui optio Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium illum provident nam?
+            Quisquam commodi rem qui numquam libero necessitatibus itaque aperiam delectus animi sed quibusdam, non
+            maxime! Doloremque, optio obcaecati?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate,
+            incidunt ad odit, quae quaerat cumque quod repudiandae reiciendis quia ipsa repellendus recusandae
+            voluptatibus possimus harum! Velit alias consectetur rerum non.lorem Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Delectus laborum vitae sed harum quis aut numquam repellat nulla perspiciatis illo.
+            Laborum expedita nisi voluptatibus facere vitae fugit voluptas animi possimus? Lorem ipsum, dolor sit amet
+            consectetur adipisicing elit. Porro hic nisi omnis doloremque maxime voluptatem voluptate molestiae cumque
+            minus necessitatibus, corrupti, vero, dignissimos sint. Dignissimos maiores eaque optio quidem deleniti.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero aut officia quas rerum maxime hic expedita
+            accusamus necessitatibus repellendus, quibusdam deleniti facere atque beatae quidem nulla vel, porro
+            corrupti ullam! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate incidunt repellat
+            libero exercitationem. Corrupti, maiores sequi? Atque eaque facere aut repellendus, perspiciatis nam nobis
+            quas, asperiores ea dolore nostrum expedita.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea, exercitationem. Ad, quaerat, est dignissimos
+            inventore maxime libero quasi molestiae quidem placeat iusto asperiores, consequatur voluptates porro
+            corrupti qui optio Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium illum provident nam?
+            Quisquam commodi rem qui numquam libero necessitatibus itaque aperiam delectus animi sed quibusdam, non
+            maxime! Doloremque, optio obcaecati?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate,
+            incidunt ad odit, quae quaerat cumque quod repudiandae reiciendis quia ipsa repellendus recusandae
+            voluptatibus possimus harum! Velit alias consectetur rerum non.lorem Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Delectus laborum vitae sed harum quis aut numquam repellat nulla perspiciatis illo.
+            Laborum expedita nisi voluptatibus facere vitae fugit voluptas animi possimus? Lorem ipsum, dolor sit amet
+            consectetur adipisicing elit. Porro hic nisi omnis doloremque maxime voluptatem voluptate molestiae cumque
+            minus necessitatibus, corrupti, vero, dignissimos sint. Dignissimos maiores eaque optio quidem deleniti.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero aut officia quas rerum maxime hic expedita
+            accusamus necessitatibus repellendus, quibusdam deleniti facere atque beatae quidem nulla vel, porro
+            corrupti ullam! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate incidunt repellat
+            libero exercitationem. Corrupti, maiores sequi? Atque eaque facere aut repellendus, perspiciatis nam nobis
+            quas, asperiores ea dolore nostrum expedita.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea, exercitationem. Ad, quaerat, est dignissimos
+            inventore maxime libero quasi molestiae quidem placeat iusto asperiores, consequatur voluptates porro
+            corrupti qui optio Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium illum provident nam?
+            Quisquam commodi rem qui numquam libero necessitatibus itaque aperiam delectus animi sed quibusdam, non
+            maxime! Doloremque, optio obcaecati?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate,
+            incidunt ad odit, quae quaerat cumque quod repudiandae reiciendis quia ipsa repellendus recusandae
+            voluptatibus possimus harum! Velit alias consectetur rerum non.lorem Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Delectus laborum vitae sed harum quis aut numquam repellat nulla perspiciatis illo.
+            Laborum expedita nisi voluptatibus facere vitae fugit voluptas animi possimus? Lorem ipsum, dolor sit amet
+            consectetur adipisicing elit. Porro hic nisi omnis doloremque maxime voluptatem voluptate molestiae cumque
+            minus necessitatibus, corrupti, vero, dignissimos sint. Dignissimos maiores eaque optio quidem deleniti.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero aut officia quas rerum maxime hic expedita
+            accusamus necessitatibus repellendus, quibusdam deleniti facere atque beatae quidem nulla vel, porro
+            corrupti ullam! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate incidunt repellat
+            libero exercitationem. Corrupti, maiores sequi? Atque eaque facere aut repellendus, perspiciatis nam nobis
+            quas, asperiores ea dolore nostrum expedita.
+        </p>
+    </section>
+    <div id="hscrollpath"></div>
+    <div id="hprogressbar"></div>
+    <script type="text/javascript">
+        window.onscroll = function(){
+            var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            var scrolled = (winScroll / height) * 100;
+            document.getElementById("progressbar").style.height = scrolled + "%";
+            document.getElementById("hprogressbar").style.width = scrolled + "%";
+        }
+
+
+
+
+
+       /* let progress = document.getElementById('progressbar');
+        let totalHeight = document.body.scrollHeight - window.innerHeight;
+        window.onscroll = function () {
+            let progressHeight = (windows.pageYOffset / totalHeight) * 100;
+            progress.style.height = progressHeight + "%";
+        }*/
+    </script>
+</body>
+
+</html>
