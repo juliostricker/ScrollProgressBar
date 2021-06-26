@@ -2,6 +2,8 @@
 
 # ScrollProgressBar
 
+✅ https://juliostricker.github.io/ScrollProgressBar/index.html
+
 
 Projeto estudado à partir do **YOUTUBE.com** Canal: *Online Tutorials*
 
